@@ -1,0 +1,77 @@
+<!doctype html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Help to find counter in smite, find live all match players kda score elo..." />
+    <meta name="keywords" content="smite, live, match, kda, league, joust, conquest, arena, siege, score, all players" />
+
+    <title>Smite Pantheon</title>
+
+    <link type="image/png" rel="icon" href="favicon.png" />
+
+    <link type="text/css" media="screen" rel="stylesheet" href="SRC/css/style.css" />
+    <link type="text/css" media="screen" rel="stylesheet" href="SRC/css/styleUsage.css" />
+    <link type="text/css" media="screen" rel="stylesheet" href="SRC/css/jquery.css" />
+    <link type="text/css" media="screen" rel="stylesheet" href="SRC/css/bootstrap/bootstrap.min.css" />
+    <link type="text/css" media="screen" rel="stylesheet" href="SRC/css/bootstrap/bootstrap-theme.min.css" />
+
+    <script type="text/javascript" src="SRC/js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="SRC/js/html/event.js"></script>
+    <script type="text/javascript" src="SRC/js/html/html.js"></script>
+    <script type="text/javascript" src="SRC/js/api/showMatchProcedure.js"></script>
+    <script type="text/javascript" src="SRC/js/api/api.js"></script>
+    <script type="text/javascript" src="SRC/js/api/apiTalk.js"></script>
+    <script type="text/javascript" src="SRC/js/base/base.js"></script>
+</head>
+
+<!-- BODY -->
+<body>
+    <input id="nbTotalReach" type="hidden" value="" />
+    <input id="nbTotalReached" type="hidden" value="0" />
+    <input id="session" type="hidden" value="{{ session }}">
+    <div id="tutorial"><img class="img-responsive" src="SRC/IMG/tutorial.jpg" alt="tutorial" /></div>
+    <div id="helpBox"><img class="img-responsive" src="SRC/IMG/bakasuraLD.jpg" alt="helpbox" /></div>
+    <div id="wrapper" class="container well">
+        <!-- HEADER -->
+        <header id="smHeader" class="panel-heading">
+            <div>
+                <img id="smlogo" src="SRC/IMG/smite.png" class="img-responsive" width="20%" alt="Smite Pantheon" />
+                <h2 id="smDescription">Know scores and counter your ennemies in smite matches</h2>
+            </div>
+        </header>
+
+        <div class="clear"></div>
+        <!-- CONTENT -->
+        <div class="panel-body">
+            <div class="panel">
+                <div class="panel-heading"><h3>Enter your name to find a player in live match</h3></div>
+                <div class="panel-body">
+                    <div class="input-group">
+                        <input id="startInput" class="form-control" name="player" placeholder="Search player in a live match" type="text" tabindex="1" />
+                        <div class="input-group-btn">
+                            <button id="startBtn" class="btn btn-default" type="button">SEARCH</button>
+                        </div>
+                    </div>
+                    <div id="playerStatus"></div>
+                </div>
+            </div>
+            <div id="panelMatch" class="panel">
+                <div id="mod" class="panel-heading" data-idMod=""></div>
+                <div class="panel-body">
+                    <table class="table">
+                        {% include 'titleMatch.html.twig' %}
+                        <tbody id="team1"></tbody>
+                        <tbody id="team2"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="panel-footer">
+            <a href="http://www.hirezstudios.com/"><img src="SRC/IMG/hr2.png" /></a>
+            <div class="pull-right" id="copyright">Copyright &#169;  smite-pantheon.com - v1.0</div>
+            <!-- <audio id="loadedaudio" src="loading.wav" autoload="auto"></audio> -->
+        </footer>
+    </div>
+</body>
+</html>

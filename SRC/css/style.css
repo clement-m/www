@@ -1,0 +1,128 @@
+/**
+ * html
+ */
+html {
+
+}
+
+/**
+ * body
+ */
+body {
+    padding-top: 30px;
+}
+
+/**
+ * td
+ */
+td {
+
+}
+
+#helpBox {
+    position: fixed;
+    display: none;
+    bottom: 0px;
+    right: 0px;
+}
+
+#tutorial {
+    display: none;
+    width: 49%;
+    top: 34px;
+    z-index: 1000;
+    left: 25%;
+    position: absolute;
+    border: 10px solid #DDDDDD;
+}
+
+.leftFloat {
+    float: left;
+}
+
+/**
+ * #team1
+ */
+#team1 {
+    border-top: #0000FF solid;
+}
+
+/**
+ * #team2
+ */
+#team2 {
+    border-top: #FF0000 solid;
+}
+
+/**
+ * #smHeader
+ */
+#smHeader{
+    padding-bottom: 60px;
+}
+
+/**
+ * #logo
+ */
+#smlogo{
+    margin-right: 32px;
+    float: left;
+}
+
+#smDescription{
+    padding-top: 22px;
+}
+
+#playerStatus {
+    padding-left: 36px;
+    margin-top: 18px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+#mod {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 6px;
+}
+
+
+
+#godImage{
+    width: 32px;
+}
+
+.newLeague{
+    margin-left: 24px;
+}
+
+.player {
+    width: 120px;
+}
+
+.leagueName {
+    float: left;
+    margin-top: 10px;
+}
+
+.masteryLevel{
+    width: 40px;
+    height: 40px;
+}
+
+.leagueImage {
+    height: 90px;
+    float: left;
+}
+
+.leagueLibelle {
+    text-align: center;
+}
+
+.leagueWrapper {
+
+}
+
+
+

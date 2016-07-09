@@ -1,0 +1,37 @@
+.totalInfo{
+	position: absolute;
+	display: inline;
+}
+
+.totalInfo:hover:after{
+	width: 260px;
+	content: attr(info);
+	background: #333;
+    background: rgba(0,0,0,.8);
+	color: #fff;
+    z-index: 98;
+    padding: 0px 5px;
+    border-radius: 4px;
+    bottom: 30px;
+    left: 30%;
+    position: absolute;
+}
+
+.kdaInfo{
+	position: absolute;
+	display: inline;
+}
+
+.kdaInfo:hover:after{
+	width: 260px;
+	content: attr(info);
+	background: #333;
+    background: rgba(0,0,0,.8);
+	color: #fff;
+    z-index: 97;
+    padding: 0px 5px;
+    border-radius: 4px;
+    bottom: 30px;
+    left: 30%;
+    position: absolute;	
+}
